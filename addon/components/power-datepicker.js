@@ -7,6 +7,7 @@ import { fallbackAction } from '../utils/computed-properties';
 export default @layout(templateLayout) @tagName('') class extends Component {
   closeOnSelect = true
   format = 'YYYY/MM/DD'
+  daysComponent = 'power-calendar/days'
   @fallbackAction(function(day){
     this.set('center', day.date);
   }) onCenterChange
